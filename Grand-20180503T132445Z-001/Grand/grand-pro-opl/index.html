@@ -1618,7 +1618,7 @@ Vidyanagar, Vidyavihar(E), Mumbai - 400 077, Maharashtra.
             </div>
 			<br><br>
             <!-- /.widget -->
-            <!--<div class="widget">
+            <div class="widget">
               <h5 class="widget-title">FOLLOW US ON</h5>
               <ul class="footer-social">
                 <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
@@ -1626,7 +1626,7 @@ Vidyanagar, Vidyavihar(E), Mumbai - 400 077, Maharashtra.
                 <li><a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a></li>
                 <li><a class="google-plus" href="#"><i class="lni-google-plus"></i></a></li>
               </ul>
-            </div>-->
+            </div>
           </div>
         </div>
       </div>
@@ -1680,8 +1680,35 @@ Vidyanagar, Vidyavihar(E), Mumbai - 400 077, Maharashtra.
     <script src="assets/js/main.js"></script>
     <script src="assets/js/form-validator.min.js"></script>
     <script src="assets/js/contact-form-script.min.js"></script>
+<<<<<<< HEAD
     <script src="assets/js/map.js"></script>
     <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyAm0f6mbXlF8xGjg8-3S1y66LQO8YVOqdM"></script>
+=======
+   <!-- <script src="assets/js/map.js"></script>-->
+    <!--<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyAm0f6mbXlF8xGjg8-3S1y66LQO8YVOqdM"></script>-->
+    <script>
+      function initMap() {
+        var uluru = {lat: 19.0729578, lng: 72.8999708};
+        var map = new google.maps.Map(document.getElementById('conatiner-map'), {
+          zoom: 18,
+          center: uluru
+        });
+
+        var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
+        var $marker_url = ( is_internetExplorer11 ) ? 'assets/img/location.png' : 'assets/img/location.png';
+
+
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          icon: $marker_url,
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm0f6mbXlF8xGjg8-3S1y66LQO8YVOqdM&callback=initMap">
+    </script>
+>>>>>>> ef58f5ed2a692a0e13e935454fbd1cd0aff3942d
       
   </body>
 </html>
