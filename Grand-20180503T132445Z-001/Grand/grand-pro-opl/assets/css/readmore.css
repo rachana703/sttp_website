@@ -4,7 +4,7 @@
 }
 
 #summary p.collapse:not(.show) {
-    height: 42px !important;
+    height: 24px !important;
     overflow: hidden;
   
     display: -webkit-box;
@@ -13,7 +13,7 @@
 }
 
 #summary p.collapsing {
-    min-height: 42px !important;
+    min-height: 24px !important;
 }
 
 #summary button.collapsed:after  {
