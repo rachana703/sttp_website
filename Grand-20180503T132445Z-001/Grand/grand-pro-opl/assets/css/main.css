@@ -17,6 +17,7 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow-x: hidden;
+  width: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -488,8 +489,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .section-padding {
-  /*padding: 60px 0;*/
-  padding: 0px;
+  padding: 60px 0;
 }
 
 .no-padding {
@@ -1993,8 +1993,9 @@ a.back-to-top:hover, a.back-to-top:focus {
 #pricing {
   background: url(../img/background/bg-pricing.jpg);
   background-attachment: fixed;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
+  width: 100%;
 }
 
 #pricing .section-title-header .section-title {
@@ -2006,23 +2007,26 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 #pricing .center {
-   
-    /*width: 100%;*/
-    width:10%;
+    margin: auto;
+}
 
-   
+#pricing.absolute {
+    position: absolute;
+    
+	left : 10px;
+    
 }
 
 #pricing .price-block-wrapper {
   text-align: center;
-   position: relative;
   display: inline-block;
+  width: 100%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   background: #ffffff;
-  padding: 0px;
-  margin-left:0px;
-  
+  padding: 10px
 }
+
+
 
 #pricing .price-block-wrapper .icon {
   padding: 20px;
@@ -2058,7 +2062,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   font-size: 38px;
   color: #5c5c5c;
   line-height: 42px;
-  margin: 0;
+  margin: 40%;
 }
 
 #pricing .price-block-wrapper .price p {
@@ -2074,7 +2078,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 #pricing .price-block-wrapper .pricing-list {
-  padding: 10px  60px 10px 78px;
+  padding: 0px;
   text-align: left;
 }
 
@@ -2098,7 +2102,27 @@ a.back-to-top:hover, a.back-to-top:focus {
 #pricing .price-block-wrapper .btn i {
   font-size: 12px;
   margin-right: 5px;
+
 }
+
+
+
+#pricing.price{
+	float: left;
+	padding: 10px;
+	text-align: left;
+}
+
+#pricing.price1{
+	float: right;
+	padding: 10px;
+	text-align: left;
+}
+
+
+
+
+
 
 
 #main-slide .carousel-control {
