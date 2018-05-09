@@ -2007,17 +2007,19 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 #pricing .center {
    
-    width: 100%;
-    position: relative;
+    /*width: 100%;*/
+    width:10%;
+
+   
 }
 
 #pricing .price-block-wrapper {
   text-align: center;
-  
+   position: relative;
   display: inline-block;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   background: #ffffff;
-  
+  padding: 0px;
   margin-left:0px;
   
 }
